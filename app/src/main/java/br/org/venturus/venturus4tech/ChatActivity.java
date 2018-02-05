@@ -12,8 +12,6 @@ public class ChatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chat);
 
         Bundle bundle = getIntent().getExtras();
-        TextView retorno = findViewById(R.id.txtRetorno);
-        if(!bundle.isEmpty())
-            retorno.setText(bundle.getString("name"));
+
     }
 }
