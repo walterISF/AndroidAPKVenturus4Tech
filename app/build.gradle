@@ -26,4 +26,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.android.support:recyclerview-v7:26.1.+'
+    compile ('io.socket:socket.io-client:0.8.3'){
+        // Exclude org.json which is provider by Android SDK
+        exclude group: 'org.json', module: 'json'
+    }
 }

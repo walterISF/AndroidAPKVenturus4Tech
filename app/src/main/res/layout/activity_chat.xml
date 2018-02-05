@@ -4,7 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="br.org.venturus.venturus4tech.ChatActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/nickname"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view_chat"
